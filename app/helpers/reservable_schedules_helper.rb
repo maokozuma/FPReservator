@@ -1,0 +1,2 @@
+module ReservableSchedulesHelper
+end

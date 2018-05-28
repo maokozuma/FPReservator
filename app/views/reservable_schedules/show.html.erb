@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fp:</strong>
+  <%= @reservable_schedule.fp_id %>
+</p>
+
+<p>
+  <strong>Starting time:</strong>
+  <%= @reservable_schedule.starting_time %>
+</p>
+
+<p>
+  <strong>Ending time:</strong>
+  <%= @reservable_schedule.ending_time %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @reservable_schedule.date %>
+</p>
+
+<%= link_to 'Edit', edit_reservable_schedule_path(@reservable_schedule) %> |
+<%= link_to 'Back', reservable_schedules_path %>

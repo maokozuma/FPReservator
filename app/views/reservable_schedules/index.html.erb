@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Reservable Schedules</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Fp</th>
+      <th>Starting time</th>
+      <th>Ending time</th>
+      <th>Date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @reservable_schedules.each do |reservable_schedule| %>
+      <tr>
+        <td><%= reservable_schedule.fp_id %></td>
+        <td><%= reservable_schedule.starting_time %></td>
+        <td><%= reservable_schedule.ending_time %></td>
+        <td><%= reservable_schedule.date %></td>
+        <td><%= link_to 'Show', reservable_schedule %></td>
+        <td><%= link_to 'Edit', edit_reservable_schedule_path(reservable_schedule) %></td>
+        <td><%= link_to 'Destroy', reservable_schedule, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Reservable Schedule', new_reservable_schedule_path %>

@@ -1,0 +1,2 @@
+class ReservableSchedule < ApplicationRecord
+end

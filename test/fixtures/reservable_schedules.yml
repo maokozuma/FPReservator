@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fp_id: 1
+  starting_time: 2018-05-28 17:22:41
+  ending_time: 2018-05-28 17:22:41
+  date: 2018-05-28
+
+two:
+  fp_id: 1
+  starting_time: 2018-05-28 17:22:41
+  ending_time: 2018-05-28 17:22:41
+  date: 2018-05-28
