@@ -1,0 +1,13 @@
+p#notice
+  = notice
+p
+  strong
+    | Name:
+  = @fp.name
+p
+  strong
+    | Email:
+  = @fp.email
+= link_to 'Edit', edit_fp_path(@fp)
+|  | 
+= link_to 'Back', fps_path

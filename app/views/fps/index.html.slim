@@ -1,0 +1,27 @@
+p#notice
+  = notice
+h1
+  | Fps
+table
+  thead
+    tr
+      th
+        | Name
+      th
+        | Email
+      th[colspan="3"]
+  tbody
+    - @fps.each do |fp|
+      tr
+        td
+          = fp.name
+        td
+          = fp.email
+        td
+          = link_to 'Show', fp
+        td
+          = link_to 'Edit', edit_fp_path(fp)
+        td
+          = link_to 'Destroy', fp, method: :delete, data: { confirm: 'Are you sure?' }
+br
+= link_to 'New Fp', new_fp_path
