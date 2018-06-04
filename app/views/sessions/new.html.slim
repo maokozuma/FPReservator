@@ -1,0 +1,12 @@
+h1 Login
+= form_for(:session, url: login_path) do |form|
+  .field
+    = form.label :email
+    = form.text_field :email
+  .field
+    = form.label :password
+    = form.text_field :password_digest
+  .actions
+    = form.submit :login
+  / p
+    | New user? #{link_to "Sign up now!", signup_path}

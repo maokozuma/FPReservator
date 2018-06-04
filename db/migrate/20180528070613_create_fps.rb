@@ -3,6 +3,7 @@ class CreateFps < ActiveRecord::Migration[5.2]
     create_table :fps do |t|
       t.string :name,  null: false
       t.string :email, null: false
+      t.string :password_digest, null: false
 
       t.timestamps
     end
