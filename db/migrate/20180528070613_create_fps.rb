@@ -5,8 +5,8 @@ class CreateFps < ActiveRecord::Migration[5.2]
       t.string :email, null: false
 
       t.timestamps
-
-      add_index :fps, :email, unipue: true
     end
+
+    add_index :fps, :email, unique: true
   end
 end
