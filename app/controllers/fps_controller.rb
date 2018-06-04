@@ -69,6 +69,6 @@ class FpsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def fp_params
-      params.require(:fp).permit(:name, :email)
+      params.require(:fp).permit(:name, :email, :password_digest)
     end
 end
